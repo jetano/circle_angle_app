@@ -161,7 +161,7 @@ def make_figure(selected_angles, diameter):
         ))
 
     fig.update_layout(
-        title=f"Interactive Circle Angle Calculator<br>Diameter = {diameter:.0f} mm, Radius = {radius:.0f} mm",
+        title=f"Interactive Circle Angle & Distance Calculator<br>Diameter = {diameter:.0f} mm, Radius = {radius:.0f} mm",
         xaxis_title="Lateral distance from center, x (mm)",
         yaxis_title="Vertical distance from center, y (mm)",
         height=700,
@@ -187,6 +187,22 @@ def make_figure(selected_angles, diameter):
     fig.update_yaxes(
         range=[-10, radius + 15],
         zeroline=True
+    )
+    
+    fig.add_annotation(
+        text="Developed by JET",
+        xref="paper",
+        yref="paper",
+        x=0.5,
+        y=0.45,
+        showarrow=False,
+        font=dict(
+            size=36,
+            color="rgba(100,100,100,0.18)"
+        ),
+        textangle=-25,
+        xanchor="center",
+        yanchor="middle"
     )
 
     return fig
