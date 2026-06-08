@@ -247,7 +247,7 @@ app.layout = html.Div(
         "padding": "20px"
     },
     children=[
-        html.H2("Circle Angle Distance Calculator"),
+        html.H2("Cylindrical Phantom Setup Webtool"),
 
         html.P(
             "Click near the upper circle surface to add an angle point. "
