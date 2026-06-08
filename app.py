@@ -190,19 +190,18 @@ def make_figure(selected_angles, diameter):
     )
     
     fig.add_annotation(
-        text="Developed by JET",
+        text="JETano | Developer",
         xref="paper",
         yref="paper",
-        x=0.5,
-        y=0.45,
+        x=0.98,
+        y=0.02,
         showarrow=False,
         font=dict(
-            size=36,
-            color="rgba(100,100,100,0.18)"
+            size=16,
+            color="rgba(80,80,80,0.45)"
         ),
-        textangle=-25,
-        xanchor="center",
-        yanchor="middle"
+        xanchor="right",
+        yanchor="bottom"
     )
 
     return fig
